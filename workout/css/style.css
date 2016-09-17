@@ -36,9 +36,9 @@ html {
 .counting_numbers span {
     opacity: 0;
     overflow: hidden;
-    -webkit-animation: countNumbers 6s linear infinite 0s;
-    -ms-animation: countNumbers 6s linear infinite 0s;
-    animation: countNumbers 6s linear infinite 0s;
+    -webkit-animation: countNumbers 1.95s linear infinite 0s;
+    -ms-animation: countNumbers 1.95s linear infinite 0s;
+    animation: countNumbers 1.95s linear infinite 0s;
 
     position: absolute;
 
@@ -50,19 +50,19 @@ html {
 }
 
 .counting_numbers span:nth-child(2) { 
-    -webkit-animation-delay: 1.5s; 
-    -ms-animation-delay: 1.5s; 
-    animation-delay: 1.5s; 
+    -webkit-animation-delay: 0.4875s; 
+    -ms-animation-delay: 0.4875s; 
+    animation-delay: 0.4875s; 
 }
 .counting_numbers span:nth-child(3) { 
-    -webkit-animation-delay: 3s; 
-    -ms-animation-delay: 3s; 
-    animation-delay: 3s; 
+    -webkit-animation-delay: .9750s; 
+    -ms-animation-delay: .9750s; 
+    animation-delay: .9750s; 
 }
 .counting_numbers span:nth-child(4) { 
-    -webkit-animation-delay: 4.5s; 
-    -ms-animation-delay: 4.5s; 
-    animation-delay: 4.5s; 
+    -webkit-animation-delay: 1.4625s; 
+    -ms-animation-delay: 1.4625s; 
+    animation-delay: 1.4625s; 
 }
 
 @-webkit-keyframes countNumbers {
@@ -73,4 +73,7 @@ html {
     20% { opacity: 0; -webkit-transform: translateY(30px); }
     80% { opacity: 0; }
     100% { opacity: 0; }
+}
+
+.bgndAudio {
 }
