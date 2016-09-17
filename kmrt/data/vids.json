@@ -1,0 +1,7 @@
+var vidsJSON = {
+	"vids":[
+		{"url":"http://youtu.be/dU3h89vIh9Y"},
+		{"url":"http://youtu.be/Ckegtf97LFg"},
+		{"url":"http://youtu.be/DPxN1XHKGMo"}
+	]	
+};

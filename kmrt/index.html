@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>KMRT</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Data -->
+		<script type="text/javascript" language="javascript" src="data/tracks.json"></script> 
+		<script type="text/javascript" language="javascript" src="data/vids.json"></script> 
+
+		<!-- Shared scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/2.8.0/jquery.mb.YTPlayer.min.js'></script>
+
+		<!-- Local scripts -->
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div id="bgndVideo" class="player" 
+			     data-property="{containment:'body',autoPlay:true, mute:true, opacity:1, ratio:'4/3', loop:true, showControls:false, showYTLogo:false, stopMovieOnBlur:false, optimizeDisplay:true}">
+			</div>
+		</div>
+		<div class="logobg" id="logo">
+			<div class="logo logosection">K</div>
+			<div class="logo logosection">M</div>
+			<div class="logo logosection">R</div>
+			<div class="logo logosection">T</div>
+		</div>
+	</body>
+</html>
