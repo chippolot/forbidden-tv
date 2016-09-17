@@ -1,0 +1,33 @@
+var vidsJSON = {
+	"vids":[
+		{"videoURL":"1U0SGLTDEfk", "startAt": 120},
+		{"videoURL":"wMQrCkjmGvk", "startAt": 120},
+		{"videoURL":"eP9T_7f1uCE", "startAt": 120},
+		{"videoURL":"QxqkGjWYAKI", "startAt": 120},
+		{"videoURL":"ScovhgvK8y8", "startAt": 120},
+		{"videoURL":"IIIrb5vxmcQ", "startAt": 120},
+		{"videoURL":"b44iLkI2RQM", "startAt": 120},
+		{"videoURL":"5FsdyXMjcQo", "startAt": 120},
+		{"videoURL":"7V9AJiokRm4", "startAt": 120},
+		{"videoURL":"WiFQCpr7GM8", "startAt": 120},
+		{"videoURL":"_bemIuKm4iY", "startAt": 120},
+		{"videoURL":"Bg-0GwRKOM4", "startAt": 120},
+		{"videoURL":"ddGEa4ZAe7U", "startAt": 120},
+		{"videoURL":"Tg7vmsIRpQ4", "startAt": 120},
+		{"videoURL":"AIdh35ctHfQ", "startAt": 120},
+		{"videoURL":"uKd4kywYrKM", "startAt": 120},
+		{"videoURL":"Hjbz_IZMEj4", "startAt": 120},
+		{"videoURL":"BxuEWd1EjB8", "startAt": 120},
+		{"videoURL":"8raSH7OAyms", "startAt": 120},
+		{"videoURL":"3UtmguA4LH0", "startAt": 120},
+		{"videoURL":"7uR_h2ePmjM", "startAt": 120},
+		{"videoURL":"D0GpZluEHz0", "startAt": 120},
+		{"videoURL":"t1kp9fbBoqA", "startAt": 120},
+		{"videoURL":"0ODSqPQTpr0", "startAt": 120},
+		{"videoURL":"dVEbOQFW-AM", "startAt": 120},
+		{"videoURL":"_IpJM29PJR4", "startAt": 120},
+		{"videoURL":"aW7OdXMb1VU", "startAt": 120},
+		{"videoURL":"MVRz8WGQo1Q", "startAt": 120},
+		{"videoURL":"MY0oEUtGNRA", "startAt": 120}
+	]	
+};

@@ -1,0 +1,76 @@
+html { 
+  background: url(../../shared/img/standby.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.scanlines {
+	width: calc(100vw + 8px);
+	height: calc(100vh + 8px);
+	top: -8px;
+	left: -8px;
+}
+
+.counting_numbers {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 80vh;
+	text-align: center;
+
+	color:rgba(255,255,255,0.75);
+
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+	text-decoration: none;
+
+	width: calc(100vw - 40px);
+	height: calc(100vh - 40px);
+}
+
+.counting_numbers span {
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: countNumbers 6s linear infinite 0s;
+    -ms-animation: countNumbers 6s linear infinite 0s;
+    animation: countNumbers 6s linear infinite 0s;
+
+    position: absolute;
+
+	margin: auto;
+	top: -15vh;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.counting_numbers span:nth-child(2) { 
+    -webkit-animation-delay: 1.5s; 
+    -ms-animation-delay: 1.5s; 
+    animation-delay: 1.5s; 
+}
+.counting_numbers span:nth-child(3) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+}
+.counting_numbers span:nth-child(4) { 
+    -webkit-animation-delay: 4.5s; 
+    -ms-animation-delay: 4.5s; 
+    animation-delay: 4.5s; 
+}
+
+@-webkit-keyframes countNumbers {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
