@@ -1,0 +1,33 @@
+var vidsJSON = {
+	"vids":[
+		{"videoURL":"cSB4BvLSrjU", "desc": "Amazing Discoveries Infomercial: Human Calculator"},
+		{"videoURL":"wbgmi1mfmBY", "desc":"Amazing Discoveries – Magic Wand - 1990"},
+		{"videoURL":"AxbAtjInhVU", "desc":"Amazing Discoveries – LeSnack - 1989"},
+		{"videoURL":"qSdM9J_VhGo", "desc":"Amazing Discoveries Infomercial: QRB"},
+		{"videoURL":"RGTQwuyyLak", "desc":"Amazing Discoveries – Auri - 1989"},
+		{"videoURL":"tZ6RyYbVni8", "desc":"Amazing Discoveries - Astonish - 1990"},
+		{"videoURL":"W-18eEox9GY", "desc":"Amazing Discoveries – Spanek Vertical Roaster - 1989"},
+		{"videoURL":"HGG1Esk1bTM", "desc":"Amazing Discoveries - Europainter - 1989"},
+		{"videoURL":"4X0OiCr8_vE", "desc":"Amazing Discoveries – Dustmaster 2000 - 1990"},
+		{"videoURL":"PYsH4KihhlE", "desc":"Amazing Discoveries – Haloplex - 1990"},
+		{"videoURL":"12Q6e1yTF3g", "desc":"Amazing Discoveries Infomercial: Alpha-Netics"},
+		{"videoURL":"pYOENjcNsH8", "desc":"Amazing Discoveries Infomercial: Natural White"},
+		{"videoURL":"I2cBHPSVPPw", "desc":"Amazing Discoveries Infomercial: Picture This"},
+		{"videoURL":"IFugZm6TWzk", "desc":"Ronco Food Dehydrator And Veg-O-Matic FULL Infomercial"},
+		{"videoURL":"i-LGw9rlgZg", "desc":"Ron Popeil’s™ 5in1 Fryer™ Full Informercial HD"},
+		{"videoURL":"GG43jyZ65R8", "desc":"Ronco Showtime Rotisserie & BBQ (Compact Model) FULL Informercial"},
+		{"videoURL":"72ZZ42Irxng", "desc":"Ronco Showtime Six Star + Knives FULL Informercial"},
+		{"videoURL":"09K4ZnDfBp4", "desc":"HomeRight PaintStick Infomercial", "startAt":20},
+		{"videoURL":"pnd4T2lTmUg", "desc":"Amazing Discoveries Infomercial: Genesis Plant Care System"},
+		{"videoURL":"IvTOQWOXSUY", "desc":"Arnold's Gourmet Kitchen - Great Wok of China Infomercial (1990)"},
+		{"videoURL":"9rd7bnoi9H0", "desc":"Amazing Discoveries – HP9000 – 1989 (debut of series)"},
+		{"videoURL":"-zerIeiOY0M", "desc":"Amazing Discoveries Infomercial: Gallery Glass"},
+		{"videoURL":"hJZ--XzJSXE", "desc":"Amazing Discoveries Infomercial: Power Steamer"},
+		{"videoURL":"aPV8_ri1LtY", "desc":"Jet Stream Oven infomercial (1990)"},
+		{"videoURL":"a-mU-dZOeSQ", "desc":"Euro Slicer"},
+		{"videoURL":"wP6KC8R5fG8", "desc":"Orange Glo Hardwood Floor Care System Infomercial Complete Program on 169296344"},
+		{"videoURL":"j4KFvbWN9Yg", "desc":"Amazing Discoveries: Sudden Youth infomercial (1991)"},
+		{"videoURL":"1GLF5PeExuU", "desc":"Amazing Discoveries Infomercial: Purr-Fect Punch"},
+		{"videoURL":"HPC3mLNL3B0", "desc":"Matthew Lesko Commercial (1998)"}
+	]	
+};

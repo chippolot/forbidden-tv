@@ -6,13 +6,6 @@ html {
   background-size: cover;
 }
 
-.scanlines {
-	width: calc(100vw + 8px);
-	height: calc(100vh + 8px);
-	top: -8px;
-	left: -8px;
-}
-
 .counting_numbers {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 80vh;
