@@ -88,7 +88,7 @@ function animateOverlay() {
 
 $(".tv_content").hide();
 
-$().ready(function () {
+$(window).on("load", function() {
     $(".tv_content").show();
     playVideos();
     animateOverlay();
