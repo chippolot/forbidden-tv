@@ -3,8 +3,8 @@ buzz.defaults.autoplay = false;
 buzz.defaults.loop = false;
 
 var image = { width: 1280, height: 1024 };
-var targetPos = { x: 415, y: 495 };
-var targetDims = { width: 370, height: 275 };
+var targetPos = { x: 410, y: 490 };
+var targetDims = { width: 380, height: 285 };
 
 var tv_content = $('.tv_content');
 
@@ -86,10 +86,9 @@ function animateOverlay() {
     }, 10);
 }
 
-$(".tv_content").hide();
-
 $(window).on("load", function() {
     $(".tv_content").show();
+
     playVideos();
     animateOverlay();
 });

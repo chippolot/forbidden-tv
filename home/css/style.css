@@ -10,10 +10,11 @@ html {
 	transform: rotate(-5.5deg);
 
 	background-color: Black;
+	display: none;	
 }
 
 .tv_content * {
-	position: absolute;	
+	position: absolute;
 }
 
 .tv { 
