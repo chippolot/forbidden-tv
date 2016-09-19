@@ -960,5 +960,18 @@ var videoChannelsJSON = {
                 "videoURL": "EPfjlPQ-EVY"
             }
         ]
+    },
+    "indianSoaps": {
+        "info": {
+            "minSample": -3,
+            "maxSample": 1
+        },
+        "videos": [
+            {"videoURL": "xFdiyF6zZBs", "startAt": 360},
+            {"videoURL": "c6vsmvzOo08", "startAt": 300},
+            {"videoURL": "AvWRz_XteoU", "startAt": 360},
+            {"videoURL": "BOMIIAaOF7Q", "startAt": 360},
+            {"videoURL": "-ZcmP7eNxhE", "startAt": 360}
+        ]
     }
 };
