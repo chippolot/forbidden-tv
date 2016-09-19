@@ -3,8 +3,8 @@ buzz.defaults.autoplay = false;
 buzz.defaults.loop = false;
 
 var image = { width: 1280, height: 1024 };
-var targetPos = { x: 410, y: 490 };
-var targetDims = { width: 380, height: 285 };
+var targetPos = { x: 400, y: 475 };
+var targetDims = { width: 380, height: 290 };
 
 var tv_content = $('.tv_content');
 
