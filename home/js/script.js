@@ -62,20 +62,33 @@ function appendPlaylist(playlist, newPlaylist) {
     return playlist.concat(preparePlaylist(_.sample(newPlaylist.videos, numSample)));
 }
 
+var playlistLength = null;
+var playCounter = 0;
+
 function playVideos() {
     var playlist = [];
     $.each(videoChannelsJSON, function(categoryName, videosList) {
         playlist = appendPlaylist(playlist, videosList);
     });
+    playlistLength = playlist.length;
+    playCounter = 0;
 
-    $(".player").YTPlaylist(playlist, true);
+    console.log("####### New Playlist", playlistLength);
+
+    $(".player").YTPlaylist(playlist, true, function(video) {
+        onNextVideo();
+    });
     $(".player").on("YTPStart", function(e) {
         $(".standby").hide();
     });
-    $(document).click(function() {
-        $(".player").playNext();
-        sfxKnob.play();
-    });
+}
+
+function onNextVideo() {
+    if (playCounter++ > playlistLength - 1)
+    {
+        playVideos();
+    }
+    console.log("####### Next Video", playCounter);
 }
 
 function animateOverlay() {
@@ -89,4 +102,10 @@ $(window).on("load", function() {
 
     playVideos();
     animateOverlay();
+
+    $(document).click(function() {
+        $(".player").playNext();
+        onNextVideo();
+        sfxKnob.play();
+    });
 });
