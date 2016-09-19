@@ -4,7 +4,7 @@ buzz.defaults.loop = false;
 
 var image = { width: 1280, height: 1024 };
 var targetPos = { x: 400, y: 475 };
-var targetDims = { width: 380, height: 290 };
+var targetDims = { width: 385, height: 295 };
 
 var tv_content = $('.tv_content');
 
@@ -56,7 +56,7 @@ function preparePlaylist(videoList) {
 
 function appendPlaylist(playlist, newPlaylist) {
     var numSample = _.random(newPlaylist.info.minSample, newPlaylist.info.maxSample);
-    if (numSample == 0) {
+    if (numSample <= 0) {
         return playlist;
     }
     return playlist.concat(preparePlaylist(_.sample(newPlaylist.videos, numSample)));
@@ -64,11 +64,9 @@ function appendPlaylist(playlist, newPlaylist) {
 
 function playVideos() {
     var playlist = [];
-    playlist = appendPlaylist(playlist, videosJSON.infomercials);
-    playlist = appendPlaylist(playlist, videosJSON.commercials);
-    playlist = appendPlaylist(playlist, videosJSON.chairs);
-    playlist = appendPlaylist(playlist, videosJSON.workout);
-    playlist = appendPlaylist(playlist, videosJSON.toonIntros);
+    $.each(videoChannelsJSON, function(categoryName, videosList) {
+        playlist = appendPlaylist(playlist, videosList);
+    });
 
     $(".player").YTPlaylist(playlist, true);
     $(".player").on("YTPStart", function(e) {

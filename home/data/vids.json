@@ -1,211 +1,964 @@
-var videosJSON = {
-	"infomercials":{
-		"info": { "minSample": 4, "maxSample":6 },
-		"videos":[
-		{"videoURL":"cSB4BvLSrjU", "desc": "Amazing Discoveries Infomercial: Human Calculator"},
-		{"videoURL":"wbgmi1mfmBY", "desc":"Amazing Discoveries – Magic Wand - 1990"},
-		{"videoURL":"AxbAtjInhVU", "desc":"Amazing Discoveries – LeSnack - 1989"},
-		{"videoURL":"qSdM9J_VhGo", "desc":"Amazing Discoveries Infomercial: QRB"},
-		{"videoURL":"RGTQwuyyLak", "desc":"Amazing Discoveries – Auri - 1989"},
-		{"videoURL":"tZ6RyYbVni8", "desc":"Amazing Discoveries - Astonish - 1990"},
-		{"videoURL":"W-18eEox9GY", "desc":"Amazing Discoveries – Spanek Vertical Roaster - 1989"},
-		{"videoURL":"HGG1Esk1bTM", "desc":"Amazing Discoveries - Europainter - 1989"},
-		{"videoURL":"4X0OiCr8_vE", "desc":"Amazing Discoveries – Dustmaster 2000 - 1990"},
-		{"videoURL":"PYsH4KihhlE", "desc":"Amazing Discoveries – Haloplex - 1990"},
-		{"videoURL":"12Q6e1yTF3g", "desc":"Amazing Discoveries Infomercial: Alpha-Netics"},
-		{"videoURL":"pYOENjcNsH8", "desc":"Amazing Discoveries Infomercial: Natural White"},
-		{"videoURL":"I2cBHPSVPPw", "desc":"Amazing Discoveries Infomercial: Picture This"},
-		{"videoURL":"IFugZm6TWzk", "desc":"Ronco Food Dehydrator And Veg-O-Matic FULL Infomercial"},
-		{"videoURL":"i-LGw9rlgZg", "desc":"Ron Popeil’s™ 5in1 Fryer™ Full Informercial HD"},
-		{"videoURL":"GG43jyZ65R8", "desc":"Ronco Showtime Rotisserie & BBQ (Compact Model) FULL Informercial"},
-		{"videoURL":"72ZZ42Irxng", "desc":"Ronco Showtime Six Star + Knives FULL Informercial"},
-		{"videoURL":"09K4ZnDfBp4", "desc":"HomeRight PaintStick Infomercial", "startAt":20},
-		{"videoURL":"pnd4T2lTmUg", "desc":"Amazing Discoveries Infomercial: Genesis Plant Care System"},
-		{"videoURL":"IvTOQWOXSUY", "desc":"Arnold's Gourmet Kitchen - Great Wok of China Infomercial (1990)"},
-		{"videoURL":"9rd7bnoi9H0", "desc":"Amazing Discoveries – HP9000 – 1989 (debut of series)"},
-		{"videoURL":"-zerIeiOY0M", "desc":"Amazing Discoveries Infomercial: Gallery Glass"},
-		{"videoURL":"hJZ--XzJSXE", "desc":"Amazing Discoveries Infomercial: Power Steamer"},
-		{"videoURL":"aPV8_ri1LtY", "desc":"Jet Stream Oven infomercial (1990)"},
-		{"videoURL":"a-mU-dZOeSQ", "desc":"Euro Slicer"},
-		{"videoURL":"wP6KC8R5fG8", "desc":"Orange Glo Hardwood Floor Care System Infomercial Complete Program on 169296344"},
-		{"videoURL":"j4KFvbWN9Yg", "desc":"Amazing Discoveries: Sudden Youth infomercial (1991)"},
-		{"videoURL":"1GLF5PeExuU", "desc":"Amazing Discoveries Infomercial: Purr-Fect Punch"},
-		{"videoURL":"HPC3mLNL3B0", "desc":"Matthew Lesko Commercial (1998)"}
-	]},
-	"commercials": {
-		"info": { "minSample": 5, "maxSample":8 },
-		"videos": [
-		{ "videoURL": "0nkcVz1mad0" },
-		{ "videoURL": "VJJ-ZLdrTwY" },
-		{ "videoURL": "oUkCPPJ1CNw" },
-		{ "videoURL": "jbzvE66KEXk" },
-		{ "videoURL": "8iE0OH5FmiU" },
-		{ "videoURL": "mlSimzDnegA" },
-		{ "videoURL": "_WcNItiyEKY" },
-		{ "videoURL": "BhvYqP0CRXk" },
-		{ "videoURL": "tJk-X9RGAhA" },
-		{ "videoURL": "-bmFXQEkpcA" },
-		{ "videoURL": "Tv5Cr1WBxC0" },
-		{ "videoURL": "ckApCdT6J7g" },
-		{ "videoURL": "j2Oixyo2xvY" },
-		{ "videoURL": "2IA5Cv_5-g8" },
-		{ "videoURL": "_JmT4LShYso" },
-		{ "videoURL": "J_XrIx2eUGc" },
-		{ "videoURL": "czu1m2eDRgE" },
-		{ "videoURL": "RjLHjFQfkaA" },
-		{ "videoURL": "gbE6ithAxAc" },
-		{ "videoURL": "z2TricMDHs0" },
-		{ "videoURL": "RJg8hGCp5F4" },
-		{ "videoURL": "3M-AkLOJihM" },
-		{ "videoURL": "zTr23PBhDGo" },
-		{ "videoURL": "t5di4-hVie8" },
-		{ "videoURL": "lz6eyLVyPdM" },
-		{ "videoURL": "s4n8WaGJnwU" },
-		{ "videoURL": "u8wk8Z93AQo" },
-		{ "videoURL": "HOJ5ObBCL_k" },
-		{ "videoURL": "-Ocee2_LDP4" },
-		{ "videoURL": "tzY7qQFij_M" },
-		{ "videoURL": "oxtUWEwjk2Q" },
-		{ "videoURL": "lJglq1hYCQI" },
-		{ "videoURL": "u3QkL9-h8YY" },
-		{ "videoURL": "3ggJBCl4UfA" },
-		{ "videoURL": "1HVA5MuWy8o" },
-		{ "videoURL": "IzxHDqUz8Sk" },
-		{ "videoURL": "SE3hntLFmRQ" },
-		{ "videoURL": "d46K8kijAcY" },
-		{ "videoURL": "lWwNETmBJPY" },
-		{ "videoURL": "BHL22ZGGTZM" },
-		{ "videoURL": "2UqNXJclyXk" },
-		{ "videoURL": "tLXQyiX7mhM" },
-		{ "videoURL": "awoR688JvtA" },
-		{ "videoURL": "ub_a2t0ZfTs" },
-		{ "videoURL": "FNAKgApo72U" },
-		{ "videoURL": "qM9VrVjadxY" },
-		{ "videoURL": "QHXuf-xH6vQ" },
-		{ "videoURL": "36l3bpwtAkY" },
-		{ "videoURL": "41PcEEJEQec" },
-		{ "videoURL": "kqZS7iM0uQI" },
-		{ "videoURL": "2kc2HvjO8z4" },
-		{ "videoURL": "4j2xEwEHbrE" },
-		{ "videoURL": "daQT_Y_gsUg" },
-		{ "videoURL": "uaXk6PVXqJE" },
-		{ "videoURL": "shDk5HziQXk" },
-		{ "videoURL": "5ivuHpOYCyA" },
-		{ "videoURL": "WhuZm-pZ2SQ" },
-		{ "videoURL": "774DYDMRltE" },
-		{ "videoURL": "OZF9-oUTvIo" },
-		{ "videoURL": "hXE8EjKa2Js" },
-		{ "videoURL": "reIGOLb6tk0" },
-		{ "videoURL": "1G7S0SZ70aw" },
-		{ "videoURL": "KxUtBcBd0nQ" },
-		{ "videoURL": "Md_uz1dKMTM" },
-		{ "videoURL": "55rD2gGJ7K8" },
-		{ "videoURL": "H07HaGX1PJM" },
-		{ "videoURL": "H2bdIOz2s1M" },
-		{ "videoURL": "SUFysarxUDE" },
-		{ "videoURL": "KYxXuY6_Png" },
-		{ "videoURL": "V-EVy6zBLUQ" },
-		{ "videoURL": "CLNWGUYhjf4" },
-		{ "videoURL": "25JVEiLIUKA" },
-		{ "videoURL": "JC8t1jB4i9I" },
-		{ "videoURL": "T065OPZwn4g" },
-		{ "videoURL": "SDqAHuA2yPY" },
-		{ "videoURL": "okEVVl9ZRM0" },
-		{ "videoURL": "zyv2O_jgqRs" },
-		{ "videoURL": "KgMmkl0ir5U" },
-		{ "videoURL": "wu35JPF_3Gc" },
-		{ "videoURL": "8N2haQjqTqE" },
-		{ "videoURL": "HvGiRElg3nQ" },
-		{ "videoURL": "-uv1PxInJnY" },
-		{ "videoURL": "0c4_b5PHWg8" },
-		{ "videoURL": "UTSdUOC8Kac" },
-		{ "videoURL": "9cIf0P-Vb-U" },
-		{ "videoURL": "uKxnELvNWLc" },
-		{ "videoURL": "dtJ2kUN8kb4" },
-		{ "videoURL": "5umASI7E_mY" },
-		{ "videoURL": "vYgZmbYoVBM" },
-		{ "videoURL": "zUz4NWFEbiU" },
-		{ "videoURL": "bJF5HAb8QMI" },
-		{ "videoURL": "03RM-Na00zw" },
-		{ "videoURL": "Lgee4_aOPWw" },
-		{ "videoURL": "paz0rg21HrQ" },
-		{ "videoURL": "9zOK4c8dgBY" },
-		{ "videoURL": "v0hH-KPAr00" },
-		{ "videoURL": "-4_d_6A8nE0" },
-		{ "videoURL": "ic3CV051-AQ" },
-		{ "videoURL": "87zDnaoO5zk" },
-		{ "videoURL": "ebk-y2FdAEQ" }
-	]},
-	"chairs": {
-		"info": { "minSample": 0, "maxSample":1 },
-		"videos": [
-		{"videoURL": "-nPSoAnrzIg"},
-		{"videoURL": "kygF8TWIPnM"},
-		{"videoURL": "wxo79iqzffY"},
-		{"videoURL": "AmIS6tWDV04"}
-	]},
-	"workout": {
-		"info": { "minSample": 2, "maxSample":4 },
-		"videos": [
-		{"videoURL":"1U0SGLTDEfk", "startAt": 120},
-		{"videoURL":"wMQrCkjmGvk", "startAt": 120},
-		{"videoURL":"eP9T_7f1uCE", "startAt": 120},
-		{"videoURL":"QxqkGjWYAKI", "startAt": 120},
-		{"videoURL":"ScovhgvK8y8", "startAt": 120},
-		{"videoURL":"IIIrb5vxmcQ", "startAt": 120},
-		{"videoURL":"b44iLkI2RQM", "startAt": 120},
-		{"videoURL":"5FsdyXMjcQo", "startAt": 120},
-		{"videoURL":"7V9AJiokRm4", "startAt": 120},
-		{"videoURL":"WiFQCpr7GM8", "startAt": 120},
-		{"videoURL":"_bemIuKm4iY", "startAt": 120},
-		{"videoURL":"Bg-0GwRKOM4", "startAt": 120},
-		{"videoURL":"ddGEa4ZAe7U", "startAt": 120},
-		{"videoURL":"Tg7vmsIRpQ4", "startAt": 120},
-		{"videoURL":"AIdh35ctHfQ", "startAt": 120},
-		{"videoURL":"uKd4kywYrKM", "startAt": 120},
-		{"videoURL":"Hjbz_IZMEj4", "startAt": 120},
-		{"videoURL":"BxuEWd1EjB8", "startAt": 120},
-		{"videoURL":"8raSH7OAyms", "startAt": 120},
-		{"videoURL":"3UtmguA4LH0", "startAt": 120},
-		{"videoURL":"D0GpZluEHz0", "startAt": 120},
-		{"videoURL":"t1kp9fbBoqA", "startAt": 120},
-		{"videoURL":"0ODSqPQTpr0", "startAt": 120},
-		{"videoURL":"dVEbOQFW-AM", "startAt": 120},
-		{"videoURL":"_IpJM29PJR4", "startAt": 120},
-		{"videoURL":"aW7OdXMb1VU", "startAt": 120},
-		{"videoURL":"MVRz8WGQo1Q", "startAt": 120},
-		{"videoURL":"MY0oEUtGNRA", "startAt": 120}
-	]},
-	"toonIntros": {
-		"info": {"minSample":4, "maxSample":6},
-		"videos":[
-			{"videoURL":"MRV5raXCDkA"},
-			{"videoURL":"oJKpcfm1qD4"},
-			{"videoURL":"aP3SLUfI2xs"},
-			{"videoURL":"EQT00ZSVzcg"},
-			{"videoURL":"LLdAVXOeNHk"},
-			{"videoURL":"97QkO7nAn68"},
-			{"videoURL":"riIOiNq0RHk"},
-			{"videoURL":"1WFjM3QWKlE"},
-			{"videoURL":"pZP0s9lS2k0"},
-			{"videoURL":"tCqQ_pUz-58"},
-			{"videoURL":"HzOwN7xeafg"},
-			{"videoURL":"0lGnaIMCmU8"},
-			{"videoURL":"y9K0SzFIf4A"},
-			{"videoURL":"JNqrWm1M3Sc"},
-			{"videoURL":"5DYItEA4b3c"},
-			{"videoURL":"tLo8cSswZ6Y"},
-			{"videoURL":"o2Z1yLO9C-Q"},
-			{"videoURL":"u7uTgMKgJL0"},
-			{"videoURL":"qfOwLWhVrPA"},
-			{"videoURL":"VHifNJnYun0"},
-			{"videoURL":"sciz05q9JdE"},
-			{"videoURL":"wR65P73X5GI"},
-			{"videoURL":"bUe5Ugg6Iks"},
-			{"videoURL":"UsG7HHcO2zU"},
-			{"videoURL":"vwGgwZSgZAI"},
-			{"videoURL":"dm1qbbki6z4"},
-			{"videoURL":"tY_cdMPcCv4"}
-		]
-	}
+var videoChannelsJSON = {
+    "chairs": {
+        "info": {
+            "maxSample": 1,
+            "minSample": 0
+        },
+        "videos": [
+            {
+                "videoURL": "-nPSoAnrzIg"
+            },
+            {
+                "videoURL": "kygF8TWIPnM"
+            },
+            {
+                "videoURL": "wxo79iqzffY"
+            },
+            {
+                "videoURL": "AmIS6tWDV04"
+            }
+        ]
+    },
+    "commercials": {
+        "info": {
+            "maxSample": 5,
+            "minSample": 3
+        },
+        "videos": [
+            {
+                "videoURL": "0nkcVz1mad0"
+            },
+            {
+                "videoURL": "VJJ-ZLdrTwY"
+            },
+            {
+                "videoURL": "oUkCPPJ1CNw"
+            },
+            {
+                "videoURL": "jbzvE66KEXk"
+            },
+            {
+                "videoURL": "8iE0OH5FmiU"
+            },
+            {
+                "videoURL": "mlSimzDnegA"
+            },
+            {
+                "videoURL": "_WcNItiyEKY"
+            },
+            {
+                "videoURL": "BhvYqP0CRXk"
+            },
+            {
+                "videoURL": "tJk-X9RGAhA"
+            },
+            {
+                "videoURL": "-bmFXQEkpcA"
+            },
+            {
+                "videoURL": "Tv5Cr1WBxC0"
+            },
+            {
+                "videoURL": "ckApCdT6J7g"
+            },
+            {
+                "videoURL": "j2Oixyo2xvY"
+            },
+            {
+                "videoURL": "2IA5Cv_5-g8"
+            },
+            {
+                "videoURL": "_JmT4LShYso"
+            },
+            {
+                "videoURL": "J_XrIx2eUGc"
+            },
+            {
+                "videoURL": "czu1m2eDRgE"
+            },
+            {
+                "videoURL": "RjLHjFQfkaA"
+            },
+            {
+                "videoURL": "gbE6ithAxAc"
+            },
+            {
+                "videoURL": "z2TricMDHs0"
+            },
+            {
+                "videoURL": "RJg8hGCp5F4"
+            },
+            {
+                "videoURL": "3M-AkLOJihM"
+            },
+            {
+                "videoURL": "zTr23PBhDGo"
+            },
+            {
+                "videoURL": "t5di4-hVie8"
+            },
+            {
+                "videoURL": "lz6eyLVyPdM"
+            },
+            {
+                "videoURL": "s4n8WaGJnwU"
+            },
+            {
+                "videoURL": "u8wk8Z93AQo"
+            },
+            {
+                "videoURL": "HOJ5ObBCL_k"
+            },
+            {
+                "videoURL": "-Ocee2_LDP4"
+            },
+            {
+                "videoURL": "tzY7qQFij_M"
+            },
+            {
+                "videoURL": "oxtUWEwjk2Q"
+            },
+            {
+                "videoURL": "lJglq1hYCQI"
+            },
+            {
+                "videoURL": "u3QkL9-h8YY"
+            },
+            {
+                "videoURL": "3ggJBCl4UfA"
+            },
+            {
+                "videoURL": "1HVA5MuWy8o"
+            },
+            {
+                "videoURL": "IzxHDqUz8Sk"
+            },
+            {
+                "videoURL": "SE3hntLFmRQ"
+            },
+            {
+                "videoURL": "d46K8kijAcY"
+            },
+            {
+                "videoURL": "lWwNETmBJPY"
+            },
+            {
+                "videoURL": "BHL22ZGGTZM"
+            },
+            {
+                "videoURL": "2UqNXJclyXk"
+            },
+            {
+                "videoURL": "tLXQyiX7mhM"
+            },
+            {
+                "videoURL": "awoR688JvtA"
+            },
+            {
+                "videoURL": "ub_a2t0ZfTs"
+            },
+            {
+                "videoURL": "FNAKgApo72U"
+            },
+            {
+                "videoURL": "qM9VrVjadxY"
+            },
+            {
+                "videoURL": "QHXuf-xH6vQ"
+            },
+            {
+                "videoURL": "36l3bpwtAkY"
+            },
+            {
+                "videoURL": "41PcEEJEQec"
+            },
+            {
+                "videoURL": "kqZS7iM0uQI"
+            },
+            {
+                "videoURL": "2kc2HvjO8z4"
+            },
+            {
+                "videoURL": "4j2xEwEHbrE"
+            },
+            {
+                "videoURL": "daQT_Y_gsUg"
+            },
+            {
+                "videoURL": "uaXk6PVXqJE"
+            },
+            {
+                "videoURL": "shDk5HziQXk"
+            },
+            {
+                "videoURL": "5ivuHpOYCyA"
+            },
+            {
+                "videoURL": "WhuZm-pZ2SQ"
+            },
+            {
+                "videoURL": "774DYDMRltE"
+            },
+            {
+                "videoURL": "OZF9-oUTvIo"
+            },
+            {
+                "videoURL": "hXE8EjKa2Js"
+            },
+            {
+                "videoURL": "reIGOLb6tk0"
+            },
+            {
+                "videoURL": "1G7S0SZ70aw"
+            },
+            {
+                "videoURL": "KxUtBcBd0nQ"
+            },
+            {
+                "videoURL": "Md_uz1dKMTM"
+            },
+            {
+                "videoURL": "55rD2gGJ7K8"
+            },
+            {
+                "videoURL": "H07HaGX1PJM"
+            },
+            {
+                "videoURL": "H2bdIOz2s1M"
+            },
+            {
+                "videoURL": "SUFysarxUDE"
+            },
+            {
+                "videoURL": "KYxXuY6_Png"
+            },
+            {
+                "videoURL": "V-EVy6zBLUQ"
+            },
+            {
+                "videoURL": "CLNWGUYhjf4"
+            },
+            {
+                "videoURL": "25JVEiLIUKA"
+            },
+            {
+                "videoURL": "JC8t1jB4i9I"
+            },
+            {
+                "videoURL": "T065OPZwn4g"
+            },
+            {
+                "videoURL": "SDqAHuA2yPY"
+            },
+            {
+                "videoURL": "okEVVl9ZRM0"
+            },
+            {
+                "videoURL": "zyv2O_jgqRs"
+            },
+            {
+                "videoURL": "KgMmkl0ir5U"
+            },
+            {
+                "videoURL": "wu35JPF_3Gc"
+            },
+            {
+                "videoURL": "8N2haQjqTqE"
+            },
+            {
+                "videoURL": "HvGiRElg3nQ"
+            },
+            {
+                "videoURL": "-uv1PxInJnY"
+            },
+            {
+                "videoURL": "0c4_b5PHWg8"
+            },
+            {
+                "videoURL": "UTSdUOC8Kac"
+            },
+            {
+                "videoURL": "9cIf0P-Vb-U"
+            },
+            {
+                "videoURL": "uKxnELvNWLc"
+            },
+            {
+                "videoURL": "dtJ2kUN8kb4"
+            },
+            {
+                "videoURL": "5umASI7E_mY"
+            },
+            {
+                "videoURL": "vYgZmbYoVBM"
+            },
+            {
+                "videoURL": "zUz4NWFEbiU"
+            },
+            {
+                "videoURL": "bJF5HAb8QMI"
+            },
+            {
+                "videoURL": "03RM-Na00zw"
+            },
+            {
+                "videoURL": "Lgee4_aOPWw"
+            },
+            {
+                "videoURL": "paz0rg21HrQ"
+            },
+            {
+                "videoURL": "9zOK4c8dgBY"
+            },
+            {
+                "videoURL": "v0hH-KPAr00"
+            },
+            {
+                "videoURL": "-4_d_6A8nE0"
+            },
+            {
+                "videoURL": "ic3CV051-AQ"
+            },
+            {
+                "videoURL": "87zDnaoO5zk"
+            },
+            {
+                "videoURL": "ebk-y2FdAEQ"
+            }
+        ]
+    },
+    "infomercials": {
+        "info": {
+            "maxSample": 3,
+            "minSample": 2
+        },
+        "videos": [
+            {
+                "desc": "Amazing Discoveries Infomercial: Human Calculator",
+                "videoURL": "cSB4BvLSrjU"
+            },
+            {
+                "desc": "Amazing Discoveries – Magic Wand - 1990",
+                "videoURL": "wbgmi1mfmBY"
+            },
+            {
+                "desc": "Amazing Discoveries – LeSnack - 1989",
+                "videoURL": "AxbAtjInhVU"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: QRB",
+                "videoURL": "qSdM9J_VhGo"
+            },
+            {
+                "desc": "Amazing Discoveries – Auri - 1989",
+                "videoURL": "RGTQwuyyLak"
+            },
+            {
+                "desc": "Amazing Discoveries - Astonish - 1990",
+                "videoURL": "tZ6RyYbVni8"
+            },
+            {
+                "desc": "Amazing Discoveries – Spanek Vertical Roaster - 1989",
+                "videoURL": "W-18eEox9GY"
+            },
+            {
+                "desc": "Amazing Discoveries - Europainter - 1989",
+                "videoURL": "HGG1Esk1bTM"
+            },
+            {
+                "desc": "Amazing Discoveries – Dustmaster 2000 - 1990",
+                "videoURL": "4X0OiCr8_vE"
+            },
+            {
+                "desc": "Amazing Discoveries – Haloplex - 1990",
+                "videoURL": "PYsH4KihhlE"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Alpha-Netics",
+                "videoURL": "12Q6e1yTF3g"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Natural White",
+                "videoURL": "pYOENjcNsH8"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Picture This",
+                "videoURL": "I2cBHPSVPPw"
+            },
+            {
+                "desc": "Ronco Food Dehydrator And Veg-O-Matic FULL Infomercial",
+                "videoURL": "IFugZm6TWzk"
+            },
+            {
+                "desc": "Ron Popeil’s™ 5in1 Fryer™ Full Informercial HD",
+                "videoURL": "i-LGw9rlgZg"
+            },
+            {
+                "desc": "Ronco Showtime Rotisserie & BBQ (Compact Model) FULL Informercial",
+                "videoURL": "GG43jyZ65R8"
+            },
+            {
+                "desc": "Ronco Showtime Six Star + Knives FULL Informercial",
+                "videoURL": "72ZZ42Irxng"
+            },
+            {
+                "desc": "HomeRight PaintStick Infomercial",
+                "startAt": 20,
+                "videoURL": "09K4ZnDfBp4"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Genesis Plant Care System",
+                "videoURL": "pnd4T2lTmUg"
+            },
+            {
+                "desc": "Arnold's Gourmet Kitchen - Great Wok of China Infomercial (1990)",
+                "videoURL": "IvTOQWOXSUY"
+            },
+            {
+                "desc": "Amazing Discoveries – HP9000 – 1989 (debut of series)",
+                "videoURL": "9rd7bnoi9H0"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Gallery Glass",
+                "videoURL": "-zerIeiOY0M"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Power Steamer",
+                "videoURL": "hJZ--XzJSXE"
+            },
+            {
+                "desc": "Jet Stream Oven infomercial (1990)",
+                "videoURL": "aPV8_ri1LtY"
+            },
+            {
+                "desc": "Euro Slicer",
+                "videoURL": "a-mU-dZOeSQ"
+            },
+            {
+                "desc": "Orange Glo Hardwood Floor Care System Infomercial Complete Program on 169296344",
+                "videoURL": "wP6KC8R5fG8"
+            },
+            {
+                "desc": "Amazing Discoveries: Sudden Youth infomercial (1991)",
+                "videoURL": "j4KFvbWN9Yg"
+            },
+            {
+                "desc": "Amazing Discoveries Infomercial: Purr-Fect Punch",
+                "videoURL": "1GLF5PeExuU"
+            },
+            {
+                "desc": "Matthew Lesko Commercial (1998)",
+                "videoURL": "HPC3mLNL3B0"
+            }
+        ]
+    },
+    "numberStations": {
+        "info": {
+            "maxSample": 1,
+            "minSample": -3
+        },
+        "videos": [
+            {
+                "videoURL": "UlJ_yuoipbQ", "startAt": 10
+            },
+            {
+                "videoURL": "YpdJI9N4hsk", "startAt": 10
+            },
+            {
+                "videoURL": "xqJ3NSPpv9U", "startAt": 10
+            },
+            {
+                "videoURL": "TH2k_qImloQ", "startAt": 10
+            },
+            {
+                "videoURL": "sLILlZQtXNQ", "startAt": 10
+            },
+            {
+                "videoURL": "5ChuZIXG7Io", "startAt": 10
+            },
+            {
+                "videoURL": "Ilm4dhjt0aI", "startAt": 10
+            },
+            {
+                "videoURL": "_KySFrQd-BY", "startAt": 10
+            },
+            {
+                "videoURL": "lqc9feC6E_k", "startAt": 10
+            },
+            {
+                "videoURL": "fOxY3L4sQC4", "startAt": 10
+            },
+            {
+                "videoURL": "mdxYQJkiiyw", "startAt": 10
+            },
+            {
+                "videoURL": "KVzZVNuarNc", "startAt": 10
+            },
+            {
+                "videoURL": "Ua94OV9Ter8", "startAt": 10
+            },
+            {
+                "videoURL": "ZOe6pij9cGY", "startAt": 10
+            },
+            {
+                "videoURL": "TgF9ZlI_R-8", "startAt": 10
+            },
+            {
+                "videoURL": "SGjoEvEPtvU", "startAt": 10
+            },
+            {
+                "videoURL": "PbqNTc12-N8", "startAt": 10
+            },
+            {
+                "videoURL": "9mB-tCslW8I", "startAt": 10
+            },
+            {
+                "videoURL": "2ww66zd7Ggk", "startAt": 10
+            },
+            {
+                "videoURL": "haCm9JAFD58", "startAt": 10
+            },
+            {
+                "videoURL": "NZVJMq0rYPs", "startAt": 10
+            },
+            {
+                "videoURL": "ZoLweIb70P0", "startAt": 10
+            },
+            {
+                "videoURL": "jKMmgTDvgx4", "startAt": 10
+            },
+            {
+                "videoURL": "SQEmKiJ8L2k", "startAt": 10
+            },
+            {
+                "videoURL": "-2EKWgTNEYU", "startAt": 10
+            },
+            {
+                "videoURL": "pldk8eoONQQ", "startAt": 10
+            },
+            {
+                "videoURL": "EdnoAJ7KoFE", "startAt": 10
+            },
+            {
+                "videoURL": "EcJK56Ep5Rw", "startAt": 10
+            },
+            {
+                "videoURL": "hDcRKXKwBxA", "startAt": 10
+            },
+            {
+                "videoURL": "bIQt6k38krk", "startAt": 10
+            },
+            {
+                "videoURL": "jKMmgTDvgx4", "startAt": 10
+            },
+            {
+                "videoURL": "_N2ND167j2Q", "startAt": 10
+            },
+            {
+                "videoURL": "9mB-tCslW8I", "startAt": 10
+            },
+            {
+                "videoURL": "Q0MQEUEG8fc", "startAt": 10
+            },
+            {
+                "videoURL": "DufmtAsMqv4", "startAt": 10
+            },
+            {
+                "videoURL": "BKA4LepSvQo", "startAt": 10
+            },
+            {
+                "videoURL": "cA0X47UuZZs", "startAt": 10
+            },
+            {
+                "videoURL": "1j0OCNaKIYs", "startAt": 10
+            },
+            {
+                "videoURL": "Ch3XRY7oTI8", "startAt": 10
+            },
+            {
+                "videoURL": "ba1Cu-vQQh4", "startAt": 10
+            },
+            {
+                "videoURL": "ToC2QjoFluI", "startAt": 10
+            },
+            {
+                "videoURL": "y8LQMDQAoVk", "startAt": 10
+            }
+        ]
+    },
+    "toonIntros": {
+        "info": {
+            "maxSample": 3,
+            "minSample": 2
+        },
+        "videos": [
+            {
+                "videoURL": "MRV5raXCDkA"
+            },
+            {
+                "videoURL": "oJKpcfm1qD4"
+            },
+            {
+                "videoURL": "aP3SLUfI2xs"
+            },
+            {
+                "videoURL": "EQT00ZSVzcg"
+            },
+            {
+                "videoURL": "LLdAVXOeNHk"
+            },
+            {
+                "videoURL": "97QkO7nAn68"
+            },
+            {
+                "videoURL": "riIOiNq0RHk"
+            },
+            {
+                "videoURL": "1WFjM3QWKlE"
+            },
+            {
+                "videoURL": "pZP0s9lS2k0"
+            },
+            {
+                "videoURL": "tCqQ_pUz-58"
+            },
+            {
+                "videoURL": "HzOwN7xeafg"
+            },
+            {
+                "videoURL": "0lGnaIMCmU8"
+            },
+            {
+                "videoURL": "y9K0SzFIf4A"
+            },
+            {
+                "videoURL": "JNqrWm1M3Sc"
+            },
+            {
+                "videoURL": "5DYItEA4b3c"
+            },
+            {
+                "videoURL": "tLo8cSswZ6Y"
+            },
+            {
+                "videoURL": "o2Z1yLO9C-Q"
+            },
+            {
+                "videoURL": "u7uTgMKgJL0"
+            },
+            {
+                "videoURL": "qfOwLWhVrPA"
+            },
+            {
+                "videoURL": "VHifNJnYun0"
+            },
+            {
+                "videoURL": "sciz05q9JdE"
+            },
+            {
+                "videoURL": "wR65P73X5GI"
+            },
+            {
+                "videoURL": "bUe5Ugg6Iks"
+            },
+            {
+                "videoURL": "UsG7HHcO2zU"
+            },
+            {
+                "videoURL": "vwGgwZSgZAI"
+            },
+            {
+                "videoURL": "dm1qbbki6z4"
+            },
+            {
+                "videoURL": "tY_cdMPcCv4"
+            }
+        ]
+    },
+    "workout": {
+        "info": {
+            "maxSample": 1,
+            "minSample": -1
+        },
+        "videos": [
+            {
+                "startAt": 120,
+                "videoURL": "1U0SGLTDEfk"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "wMQrCkjmGvk"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "eP9T_7f1uCE"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "QxqkGjWYAKI"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "ScovhgvK8y8"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "IIIrb5vxmcQ"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "b44iLkI2RQM"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "5FsdyXMjcQo"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "7V9AJiokRm4"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "WiFQCpr7GM8"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "_bemIuKm4iY"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "Bg-0GwRKOM4"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "ddGEa4ZAe7U"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "Tg7vmsIRpQ4"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "AIdh35ctHfQ"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "uKd4kywYrKM"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "Hjbz_IZMEj4"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "BxuEWd1EjB8"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "8raSH7OAyms"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "3UtmguA4LH0"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "D0GpZluEHz0"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "t1kp9fbBoqA"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "0ODSqPQTpr0"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "dVEbOQFW-AM"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "_IpJM29PJR4"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "aW7OdXMb1VU"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "MVRz8WGQo1Q"
+            },
+            {
+                "startAt": 120,
+                "videoURL": "MY0oEUtGNRA"
+            }
+        ]
+    },
+    "slowTV": {
+        "info": {
+            "minSample": -2,
+            "maxSample": 2
+        },
+        "videos": [
+            {
+                "videoURL": "69UoIjED9To"
+            },
+            {
+                "videoURL": "faI-hWrTrCw"
+            },
+            {
+                "videoURL": "G20ooYEBviw"
+            },
+            {
+                "videoURL": "-LKl07KMTSg"
+            },
+            {
+                "videoURL": "DmdAaufJ1UA"
+            },
+            {
+                "videoURL": "tqDQAsXS1iU"
+            },
+            {
+                "videoURL": "831Drz4YQdQ"
+            },
+            {
+                "videoURL": "Ugw9-8nXXmU"
+            },
+            {
+                "videoURL": "831Drz4YQdQ"
+            },
+            {
+                "videoURL": "tnsQ8DjD6YE"
+            },
+            {
+                "videoURL": "9pVWfzsgLoQ"
+            },
+            {
+                "videoURL": "0Tpq2mLtXDc"
+            },
+            {
+                "videoURL": "90D6l_qnT3M"
+            },
+            {
+                "videoURL": "heiD4L5N724"
+            },
+            {
+                "videoURL": "ceqDG7t9O5c"
+            },
+            {
+                "videoURL": "zZ7LORizfZg"
+            },
+            {
+                "videoURL": "cI68E-PEvFU"
+            },
+            {
+                "videoURL": "HdSUIGPXfrQ"
+            },
+            {
+                "videoURL": "QzCutNGGl1I"
+            },
+            {
+                "videoURL": "CIR40TPn4b8"
+            },
+            {
+                "videoURL": "OoNit6dtzbs"
+            },
+            {
+                "videoURL": "k6UO_0RrsvI"
+            },
+            {
+                "videoURL": "6Rf_MSTTmJA"
+            },
+            {
+                "videoURL": "vqB_d8w1N0w"
+            },
+            {
+                "videoURL": "KrcyADZzDKQ"
+            },
+            {
+                "videoURL": "uHFVzFTIq0o"
+            },
+            {
+                "videoURL": "-ptLojXlvcY"
+            },
+            {
+                "videoURL": "4SOC0Ry9ous"
+            },
+            {
+                "videoURL": "k2uEyn1ZSn0"
+            },
+            {
+                "videoURL": "wK6KFrbN4W8"
+            },
+            {
+                "videoURL": "Arp3BHP5Z5U"
+            },
+            {
+                "videoURL": "L7I_VMY5i1w"
+            },
+            {
+                "videoURL": "XMew3_Jjnrk"
+            }
+        ]
+    },
+    "pbsShows": {
+        "info": {
+            "minSample": 1,
+            "maxSample": 2
+        },
+        "videos": [
+            {
+                "videoURL": "u9sJ4NAugxg"
+            },
+            {
+                "videoURL": "u9sJ4NAugxg"
+            },
+            {
+                "videoURL": "8HfA9K7SL5M"
+            },
+            {
+                "videoURL": "RdyxmhYvlKM"
+            },
+            {
+                "videoURL": "RdyxmhYvlKM"
+            },
+            {
+                "videoURL": "RdyxmhYvlKM"
+            },
+            {
+                "videoURL": "6UgGu89m3XQ"
+            },
+            {
+                "videoURL": "GPPOpWBMFx4"
+            },
+            {
+                "videoURL": "NCuqlLq1k7o"
+            },
+            {
+                "videoURL": "fad9GWE2_DY"
+            },
+            {
+                "videoURL": "WSHII9Xl6WA"
+            },
+            {
+                "videoURL": "d-OHRXQy7H0"
+            },
+            {
+                "videoURL": "EPfjlPQ-EVY"
+            },
+            {
+                "videoURL": "x773PJowt7I"
+            },
+            {
+                "videoURL": "bnt2H1F5Psg"
+            },
+            {
+                "videoURL": "XM49l1OrU6U"
+            },
+            {
+                "videoURL": "EPfjlPQ-EVY"
+            }
+        ]
+    }
 };
