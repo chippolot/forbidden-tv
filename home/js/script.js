@@ -6,6 +6,9 @@ var image = { width: 1280, height: 1024 };
 var targetPos = { x: 400, y: 475 };
 var targetDims = { width: 385, height: 295 };
 
+var player;
+var totalPlaylistWeights = 0;
+
 var tv_content = $('.tv_content');
 
 $(document).ready(positionTVContent);
@@ -47,65 +50,67 @@ var sfxKnob = new buzz.sound("data/knob.wav", {
     volume: 100
 });
 
-function preparePlaylist(videoList) {
-    return _.map(videoList, function(videoJSON) {
-        var playlistEntryJSON = {containment:'self',autoPlay:true, mute:false, volume:1, opacity:1, ratio:'4/3', loop:true, showControls:false, showYTLogo:false, stopMovieOnBlur:false};
-        return _.extend(playlistEntryJSON, videoJSON);
-    });
-}
-
-function appendPlaylist(playlist, newPlaylist) {
-    var numSample = _.random(newPlaylist.info.minSample, newPlaylist.info.maxSample);
-    if (numSample <= 0) {
-        return playlist;
-    }
-    return playlist.concat(preparePlaylist(_.sample(newPlaylist.videos, numSample)));
-}
-
-var playlistLength = null;
-var playCounter = 0;
-
-function playVideos() {
-    var playlist = [];
-    $.each(videoChannelsJSON, function(categoryName, videosList) {
-        playlist = appendPlaylist(playlist, videosList);
-    });
-    playlistLength = playlist.length;
-    playCounter = 0;
-
-    console.log("####### New Playlist", playlistLength);
-
-    $(".player").YTPlaylist(playlist, true, function(video) {
-        onNextVideo();
-    });
-    $(".player").on("YTPStart", function(e) {
-        $(".standby").hide();
-    });
-}
-
-function onNextVideo() {
-    if (playCounter++ > playlistLength - 1)
-    {
-        playVideos();
-    }
-    console.log("####### Next Video", playCounter);
-}
-
 function animateOverlay() {
     setInterval(function () {
         $('.overlay').css('opacity', Math.random()*0.3+0.4);
     }, 10);
 }
 
+function preparePlaylist() {
+    totalPlaylistWeights = 0;
+
+    $.each(videoChannelsJSON, function(categoryName, playlistCategory) {
+
+        // compute total weight
+        totalPlaylistWeights += playlistCategory.info.weight;
+    });
+}
+
+function getRandomVideoDataFromCategory(categoryKey) {
+    var playlistCategory = videoChannelsJSON[categoryKey];
+    var videos = playlistCategory.videos;
+    var randomVideo = _.sample(videos);
+    return _.extend(randomVideo, {containment:'self',autoPlay:true, mute:false, volume:1, opacity:1, ratio:'4/3', loop:true, showControls:false, showYTLogo:false, stopMovieOnBlur:false});
+}
+
+function getRandomVideoData() {
+    var randomWeight = Math.random() * totalPlaylistWeights;
+    for (var categoryKey in videoChannelsJSON)
+    {
+        var playlistCategory = videoChannelsJSON[categoryKey];
+        randomWeight -= playlistCategory.info.weight;
+        if (randomWeight <= 0) 
+        {
+            return getRandomVideoDataFromCategory(categoryKey);
+        }
+    }
+    return null;
+}
+
+function playRandomVideo() {
+    var videoData = getRandomVideoData();
+    player.changeMovie(videoData);
+}
+
 $(window).on("load", function() {
     $(".tv_content").show();
 
-    playVideos();
+    preparePlaylist();
     animateOverlay();
 
+    player = $(".player");
+    player.on("YTPEnd", function(e) {
+        playRandomVideo();
+    });
+    player.on("YTPStart", function(e) {
+        $(".standby").hide();
+    });
+    player.YTPlayer(_.extend({onError: function(e) {
+        playRandomVideo();
+    }}, getRandomVideoData()));
+
     $(document).click(function() {
-        $(".player").playNext();
-        onNextVideo();
+        playRandomVideo();
         sfxKnob.play();
     });
 });

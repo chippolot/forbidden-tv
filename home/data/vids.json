@@ -1,8 +1,7 @@
 var videoChannelsJSON = {
     "chairs": {
         "info": {
-            "maxSample": 1,
-            "minSample": 0
+            "weight": 1
         },
         "videos": [
             {
@@ -21,8 +20,7 @@ var videoChannelsJSON = {
     },
     "commercials": {
         "info": {
-            "maxSample": 5,
-            "minSample": 3
+            "weight": 5
         },
         "videos": [
             {
@@ -329,8 +327,7 @@ var videoChannelsJSON = {
     },
     "infomercials": {
         "info": {
-            "maxSample": 3,
-            "minSample": 2
+            "weight": 2.5
         },
         "videos": [
             {
@@ -454,8 +451,7 @@ var videoChannelsJSON = {
     },
     "numberStations": {
         "info": {
-            "maxSample": 1,
-            "minSample": -3
+            "weight": 0.25
         },
         "videos": [
             {
@@ -588,8 +584,7 @@ var videoChannelsJSON = {
     },
     "toonIntros": {
         "info": {
-            "maxSample": 3,
-            "minSample": 2
+            "weight": 2.5
         },
         "videos": [
             {
@@ -677,8 +672,7 @@ var videoChannelsJSON = {
     },
     "workout": {
         "info": {
-            "maxSample": 1,
-            "minSample": -1
+            "weight": 1
         },
         "videos": [
             {
@@ -797,8 +791,7 @@ var videoChannelsJSON = {
     },
     "slowTV": {
         "info": {
-            "minSample": -2,
-            "maxSample": 2
+            "weight": 1.5
         },
         "videos": [
             {
@@ -904,8 +897,7 @@ var videoChannelsJSON = {
     },
     "pbsShows": {
         "info": {
-            "minSample": 1,
-            "maxSample": 2
+            "weight": 2
         },
         "videos": [
             {
@@ -963,8 +955,7 @@ var videoChannelsJSON = {
     },
     "indianSoaps": {
         "info": {
-            "minSample": -3,
-            "maxSample": 1
+            "weight": 1
         },
         "videos": [
             {"videoURL": "xFdiyF6zZBs", "startAt": 360},
