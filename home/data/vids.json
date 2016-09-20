@@ -795,103 +795,103 @@ var videoChannelsJSON = {
         },
         "videos": [
             {
-                "videoURL": "69UoIjED9To"
+                "videoURL": "69UoIjED9To", "startAt": 220
             },
             {
-                "videoURL": "faI-hWrTrCw"
+                "videoURL": "faI-hWrTrCw", "startAt": 220
             },
             {
-                "videoURL": "G20ooYEBviw"
+                "videoURL": "G20ooYEBviw", "startAt": 220
             },
             {
-                "videoURL": "-LKl07KMTSg"
+                "videoURL": "-LKl07KMTSg", "startAt": 220
             },
             {
-                "videoURL": "DmdAaufJ1UA"
+                "videoURL": "DmdAaufJ1UA", "startAt": 220
             },
             {
-                "videoURL": "tqDQAsXS1iU"
+                "videoURL": "tqDQAsXS1iU", "startAt": 220
             },
             {
-                "videoURL": "831Drz4YQdQ"
+                "videoURL": "831Drz4YQdQ", "startAt": 220
             },
             {
-                "videoURL": "Ugw9-8nXXmU"
+                "videoURL": "Ugw9-8nXXmU", "startAt": 220
             },
             {
-                "videoURL": "831Drz4YQdQ"
+                "videoURL": "831Drz4YQdQ", "startAt": 220
             },
             {
-                "videoURL": "tnsQ8DjD6YE"
+                "videoURL": "tnsQ8DjD6YE", "startAt": 220
             },
             {
-                "videoURL": "9pVWfzsgLoQ"
+                "videoURL": "9pVWfzsgLoQ", "startAt": 220
             },
             {
-                "videoURL": "0Tpq2mLtXDc"
+                "videoURL": "0Tpq2mLtXDc", "startAt": 220
             },
             {
-                "videoURL": "90D6l_qnT3M"
+                "videoURL": "90D6l_qnT3M", "startAt": 220
             },
             {
-                "videoURL": "heiD4L5N724"
+                "videoURL": "heiD4L5N724", "startAt": 220
             },
             {
-                "videoURL": "ceqDG7t9O5c"
+                "videoURL": "ceqDG7t9O5c", "startAt": 220
             },
             {
-                "videoURL": "zZ7LORizfZg"
+                "videoURL": "zZ7LORizfZg", "startAt": 220
             },
             {
-                "videoURL": "cI68E-PEvFU"
+                "videoURL": "cI68E-PEvFU", "startAt": 220
             },
             {
-                "videoURL": "HdSUIGPXfrQ"
+                "videoURL": "HdSUIGPXfrQ", "startAt": 220
             },
             {
-                "videoURL": "QzCutNGGl1I"
+                "videoURL": "QzCutNGGl1I", "startAt": 220
             },
             {
-                "videoURL": "CIR40TPn4b8"
+                "videoURL": "CIR40TPn4b8", "startAt": 220
             },
             {
-                "videoURL": "OoNit6dtzbs"
+                "videoURL": "OoNit6dtzbs", "startAt": 220
             },
             {
-                "videoURL": "k6UO_0RrsvI"
+                "videoURL": "k6UO_0RrsvI", "startAt": 220
             },
             {
-                "videoURL": "6Rf_MSTTmJA"
+                "videoURL": "6Rf_MSTTmJA", "startAt": 220
             },
             {
-                "videoURL": "vqB_d8w1N0w"
+                "videoURL": "vqB_d8w1N0w", "startAt": 220
             },
             {
-                "videoURL": "KrcyADZzDKQ"
+                "videoURL": "KrcyADZzDKQ", "startAt": 220
             },
             {
-                "videoURL": "uHFVzFTIq0o"
+                "videoURL": "uHFVzFTIq0o", "startAt": 220
             },
             {
-                "videoURL": "-ptLojXlvcY"
+                "videoURL": "-ptLojXlvcY", "startAt": 220
             },
             {
-                "videoURL": "4SOC0Ry9ous"
+                "videoURL": "4SOC0Ry9ous", "startAt": 220
             },
             {
-                "videoURL": "k2uEyn1ZSn0"
+                "videoURL": "k2uEyn1ZSn0", "startAt": 220
             },
             {
-                "videoURL": "wK6KFrbN4W8"
+                "videoURL": "wK6KFrbN4W8", "startAt": 220
             },
             {
-                "videoURL": "Arp3BHP5Z5U"
+                "videoURL": "Arp3BHP5Z5U", "startAt": 220
             },
             {
-                "videoURL": "L7I_VMY5i1w"
+                "videoURL": "L7I_VMY5i1w", "startAt": 220
             },
             {
-                "videoURL": "XMew3_Jjnrk"
+                "videoURL": "XMew3_Jjnrk", "startAt": 220
             }
         ]
     },
@@ -963,6 +963,30 @@ var videoChannelsJSON = {
             {"videoURL": "AvWRz_XteoU", "startAt": 360},
             {"videoURL": "BOMIIAaOF7Q", "startAt": 360},
             {"videoURL": "-ZcmP7eNxhE", "startAt": 360}
+        ]
+    },
+    "sittingSmiling": {
+        "info": {
+            "weight": 0.08
+        },
+        "videos": [
+            {"videoURL": "lB-mu-H9uQ0", "startAt": 360},
+            {"videoURL": "GAu4zimUFBQ", "startAt": 300},
+            {"videoURL": "NxR16B8ZwQE", "startAt": 360},
+            {"videoURL": "ARMXeFwSTqg", "startAt": 360},
+            {"videoURL": "scepecKkbW8", "startAt": 360}
+        ]
+    },
+    "scrambledTV": {
+        "info": {
+            "weight": 0.2
+        },
+        "videos": [
+            {"videoURL": "kZWmMOLVaSA"},
+            {"videoURL": "h9ube1i-a1M"},
+            {"videoURL": "V1wXCXZgtnE"},
+            {"videoURL": "D1_eJMliuhY"},
+            {"videoURL": "myJ4AkxgqRA"}
         ]
     }
 };
